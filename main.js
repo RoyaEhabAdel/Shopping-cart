@@ -14,9 +14,7 @@ openShopping.addEventListener('click', ()=>{
 closeShopping.addEventListener('click', ()=>{
     document.getElementById('card').style.display="none";
 })
-document.getElementById('goToCheck').addEventListener('click', ()=>{
-    document.getElementById('check').style.display="block";
-})
+
 
 let products = [
     {
@@ -162,6 +160,15 @@ function reloadCart(){
     })
     total.textContent = totalPrice.toLocaleString();
     quantity.innerHTML = count;
+
+    //checkout
+    if(total.textContent!=0){
+    document.getElementById('goToCheck').addEventListener('click', ()=>{
+    document.getElementById('check').style.display="block";
+    document.getElementById('card').style.display="none";
+    })
+}
+
 }
 
 function changeQuantity(key,quantity){
@@ -174,5 +181,17 @@ function changeQuantity(key,quantity){
     reloadCart();
 }
 
+//input required
+document.getElementById('fName').required;
+document.getElementById('Num').required;
+document.getElementById('Address').required;
+
+//to go to final page
+document.getElementById('goCheck').addEventListener('click', ()=>{
+    var x = document.forms["myForm"]["fName"].value;
+  if (x != "") {
+    window.location.href = "final.html";
+    }
+})
 
 
