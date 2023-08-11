@@ -189,7 +189,9 @@ document.getElementById('Address').required;
 //to go to final page
 document.getElementById('goCheck').addEventListener('click', ()=>{
     var x = document.forms["myForm"]["fName"].value;
-  if (x != "") {
+    var x = document.forms["myForm"]["num"].value;
+    var x = document.forms["myForm"]["address"].value;
+  if (x != "" && y!="" && z!="") {
     window.location.href = "final.html";
     }
 })
