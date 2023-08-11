@@ -191,7 +191,7 @@ document.getElementById('goCheck').addEventListener('click', ()=>{
     var x = document.forms["myForm"]["fName"].value;
     var x = document.forms["myForm"]["num"].value;
     var x = document.forms["myForm"]["address"].value;
-  if (x != "" && y!="" && z!="") {
+  if (x != "" && y!= "" && z!= "") {
     window.location.href = "final.html";
     }
 })
