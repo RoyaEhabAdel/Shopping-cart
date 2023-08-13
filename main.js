@@ -192,7 +192,7 @@ document.getElementById('goCheck').addEventListener('click', ()=>{
     var y = document.forms["myForm"]["num"].value;
     var z = document.forms["myForm"]["address"].value;
   if (x != "" && y!= "" && z!= "") {
-    window.location.href = "final.html";
+    window.location.href = "~/final.html";
     }
 })
 
